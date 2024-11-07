@@ -1,6 +1,8 @@
 {
-    "name": "nextflow",
-    "image": "nextflow/nextflow:24.10.0",
+    "name": "Nextflow Dev Env",
+    "image": "nfcore/gitpod:latest",
+    "remoteUser": "gitpod",
+    "runArgs": ["--privileged"],
 
     // Configure tool-specific properties.
     "customizations": {
@@ -12,7 +14,7 @@
             },
 
             // Add the IDs of extensions you want installed when the container is created.
-            "extensions": ["ms-python.python", "ms-python.vscode-pylance", "nf-core.nf-core-extensionpack"]
+            "extensions": ["ms-python.python", "ms-python.vscode-pylance", "nf-core.nf-core-extensionpack", "nextflow.nextflow"]
         }
     }
 }
