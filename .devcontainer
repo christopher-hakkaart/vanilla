@@ -1,0 +1,18 @@
+{
+    "name": "nextflow",
+    "image": "nextflow/nextflow:24.10.0",
+
+    // Configure tool-specific properties.
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            // Set *default* container specific settings.json values on container create.
+            "settings": {
+                "python.defaultInterpreterPath": "/opt/conda/bin/python"
+            },
+
+            // Add the IDs of extensions you want installed when the container is created.
+            "extensions": ["ms-python.python", "ms-python.vscode-pylance", "nf-core.nf-core-extensionpack"]
+        }
+    }
+}
